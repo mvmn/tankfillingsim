@@ -56,12 +56,10 @@ public class LineComponent implements GraphicComponent {
 		return y1;
 	}
 
-	@Override
 	public int getWidth() {
 		return x2 - x1;
 	}
 
-	@Override
 	public int getHeight() {
 		return y2 - y1;
 	}
