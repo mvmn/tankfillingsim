@@ -79,7 +79,7 @@ public class TankFillGame {
 									canvas.revalidate();
 									canvas.repaint();
 
-									scrollPanel.repaint();
+									// scrollPanel.repaint();
 								}
 							});
 
@@ -94,6 +94,8 @@ public class TankFillGame {
 							});
 
 							mainWindow.pack();
+							// scrollPanel.setSize(canvas.getSize());
+							canvas.setSize(scrollPanel.getSize());
 							SwingUtilities.invokeLater(() -> {
 								mainWindow.setVisible(true);
 							});
